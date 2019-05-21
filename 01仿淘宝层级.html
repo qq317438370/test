@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>仿淘宝层级</title>
+    <style>
+    .warp {
+        width: 1000px;
+        margin: 100px auto;
+    }
+
+    ul li {
+        list-style: none;
+        width: 200px;
+        height: 300px;
+        border: 1px solid lightgrey;
+        float: left;
+        margin-left: -1px;
+        z-index: 1;
+    }
+
+    li:hover {
+        border-color: red;
+        z-index: 100;
+        position: relative;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>
